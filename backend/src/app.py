@@ -8,8 +8,22 @@ import requests
 app = Flask(__name__)
 # CORS(app)
 
-#Database
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:060798me@localhost/postgres'
+#Database config
+ENV = 'dev'
+
+if ENV == 'dev':
+  app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:060798me@localhost/postgres'
+  app.debug = True
+  connection = psycopg2.connect(user="postgres",
+                                    password="060798me",
+                                    host="127.0.0.1",
+                                    port="5432",
+                                    database="postgres")  
+else:
+  app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://cowzqlfqbobecf:abbbce0268fade0114cbe88fb9ca4f0beece46bcaba6d6e44659a6a43418f04d@ec2-54-165-36-134.compute-1.amazonaws.com:5432/d7mtu3krl0i64u'
+  app.debug = False
+  connection = psycopg2.connect('postgres://cowzqlfqbobecf:abbbce0268fade0114cbe88fb9ca4f0beece46bcaba6d6e44659a6a43418f04d@ec2-54-165-36-134.compute-1.amazonaws.com:5432/d7mtu3krl0i64u', sslmode='require')  
+
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 
@@ -24,11 +38,7 @@ class Empresas(db.Model):
     self.cod_empresa = cod_empresa
 
 #Conexão para executar querys com SQL puro
-connection = psycopg2.connect(user="postgres",
-                                    password="060798me",
-                                    host="127.0.0.1",
-                                    port="5432",
-                                    database="postgres")  
+
 
 #Rotas
 @app.route('/bovespa', methods = ['GET'])
