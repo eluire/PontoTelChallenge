@@ -51,9 +51,9 @@ A api construída para servir nossa aplicação Apresenta 5 rotas principais.
 
 - Retorna valor do índice bovespa em tempo real
 
-      		@app.route('/bovespa', methods  = ['GET'])
+        @app.route('/bovespa', methods  = ['GET'])
 
-      	**Request:**
+  **Request:**
 
 
         http://localhost:5001/bovespa
@@ -68,16 +68,16 @@ A api construída para servir nossa aplicação Apresenta 5 rotas principais.
 
 - Retorna o preço da ação da empresa selecionada
 
-      	    @app.route('/consulta', methods  = ['POST'])
+        @app.route('/consulta', methods  = ['POST'])
 
-      	**Request:**
+  **Request:**
 
 
-    	http://localhost:5001/consulta
+    	  http://localhost:5001/consulta
 
-    	{
-    		cod_empresa : "PETR4"
-    	}
+    	  {
+    		  cod_empresa : "PETR4"
+    	  }
 
 
 
@@ -91,17 +91,17 @@ A api construída para servir nossa aplicação Apresenta 5 rotas principais.
 
 - Salva empresas selecionadas no banco de dados
 
-      	    @app.route('/save-personalizada', methods  = ['POST'])
+        @app.route('/save-personalizada', methods  = ['POST'])
 
-      	**Request:**
+  **Request:**
 
 
-    	http://localhost:5001/save-personalizada
+    	  http://localhost:5001/save-personalizada
 
-    	{
-    		cod_empresa : "PETR4",
-    		empresa : "Petrobras"
-    	}
+    	  {
+    		  cod_empresa : "PETR4",
+    		  empresa : "Petrobras"
+    	  }
 
 
 
@@ -110,47 +110,46 @@ A api construída para servir nossa aplicação Apresenta 5 rotas principais.
 
     	'Empresas adicionadas!'
 
-
 - Retorna as empresas presentes no banco de dados
 
-      	    @app.route('/export-personalizada', methods  = ['GET'])
+      	@app.route('/export-personalizada', methods  = ['GET'])
 
-      	**Request:**
+  **Request:**
 
 
-    	http://localhost:5001/export-personalizada
+    	  http://localhost:5001/export-personalizada
 
     **Response:**
 
-    	[
-    	  {
-    	    "cod_empresa": "VALE3.SA",
-    	    "empresa": "Vale",
-    	    "price": "44.8600"
-    	  },
-    	  {
-    	    "cod_empresa": "ITUB4.SA",
-    	    "empresa": "Itaú",
-    	    "price": "22.7700"
-    	  }
-    	]
+    	  [
+    	    {
+    	      "cod_empresa": "VALE3.SA",
+    	      "empresa": "Vale",
+    	      "price": "44.8600"
+    	    },
+    	    {
+    	      "cod_empresa": "ITUB4.SA",
+    	      "empresa": "Itaú",
+    	      "price": "22.7700"
+    	    }
+    	  ]
 
 - Deleta do banco de dados as empresas selecionadas
 
-      	    @app.route('/delete-personalizada', methods  = ['DELETE'])
+      	@app.route('/delete-personalizada', methods  = ['DELETE'])
 
 
     **Request:**
 
 
-    	http://localhost:5001/delete-personalizada
+    	  http://localhost:5001/delete-personalizada
 
-    	{
-    		cod_empresa : "PETR4"
-    	}
+    	  {
+    		  cod_empresa : "PETR4"
+    	  }
     **Response:**
 
-    	"Empresas removidas"
+    	  "Empresas removidas"
 
 Para fazer a consulta aos dados da bolsa de valores em tempo real, foi utilizada a API [Alphavantage](https://www.alphavantage.co/documentation/)
 
