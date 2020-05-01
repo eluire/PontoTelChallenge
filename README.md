@@ -158,7 +158,7 @@ Para fazer a consulta aos dados da bolsa de valores em tempo real, foi utilizada
 A interface da aplicação permite navegar entre 4 abas: Home, Consulta Bovespa, Consulta empresas e Consulta Personalizada.
 
 A tela inicial permite o usuário ter uma visão geral sobre o projeto bem como o acesso ao github e linkedin do desenvolvedor.
-![Home](/frontend/src/assets/home.png)
+![Home]("/frontend/src/assets/home.png")
 
 Na tela de consulta bovespa é possível visualizar a pontuação em tempo real do índice, Já a tela de consulta personalizada, oferece a possibilidade do usuário escolher um empresa e observar o preço de sua ação em tempo real.
 
