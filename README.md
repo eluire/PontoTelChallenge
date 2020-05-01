@@ -161,8 +161,12 @@ A tela inicial permite o usuário ter uma visão geral sobre o projeto bem como 
 ![Home](./frontend/src/assets/home.png)
 
 Na tela de consulta bovespa é possível visualizar a pontuação em tempo real do índice, Já a tela de consulta personalizada, oferece a possibilidade do usuário escolher um empresa e observar o preço de sua ação em tempo real.
+![Bovespa](./frontend/src/assets/bov.png)
 
 A última tela é de consulta personalizada, a mesma permite ao usuário montar uma espécie de dashboard com a contação das maiores empresas da bolsa brasileira. Através do menu superior é possível adicionar e excluir empresas do dashboard, se usuário sair da aplicação o mesmo poderá visualizar as mesmas empresas selecionadas anteriormente.
+
+![Consulta empresas](./frontend/src/assets/consulta.png)
+![Consulta Personalizada](./frontend/src/assets/personalizada.png)
 
 # Conclusão
 
