@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>bovespa</title>
+  </head>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: "Montserrat", sans-serif;
+    }
+    html,
+    body {
+      height: 100%;
+    }
+    .container {
+      height: inherit;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .bovespa {
+      width: 30%;
+      height: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid #ababab;
+    }
+    h1 {
+      font-size: 3em;
+    }
+  </style>
+
+  <body>
+    <div class="container">
+      <div class="bovespa">
+        <h1>Bovespa</h1>
+        <h2>{{ valor }}</h2>
+      </div>
+    </div>
+  </body>
+</html>
