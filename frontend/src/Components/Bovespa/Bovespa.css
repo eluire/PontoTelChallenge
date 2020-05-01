@@ -1,0 +1,28 @@
+.container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bovespa {
+  width: 400px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #ababab;
+  border-radius: 5px;
+}
+h1 {
+  margin-top: 30px;
+  font-size: 3em;
+}
+h2 {
+  margin-top: 40px;
+  font-size: 3em;
+}
+button {
+  margin-top: 20px;
+  width: 10%;
+}

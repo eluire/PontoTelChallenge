@@ -1,0 +1,14 @@
+hr {
+  width: 70%;
+  background-color: #696969;
+}
+.home-card {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.abstract {
+  width: 70%;
+  text-align: justify;
+}

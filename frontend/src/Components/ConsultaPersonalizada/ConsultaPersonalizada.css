@@ -1,0 +1,97 @@
+.dashboard {
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 50px;
+}
+.empresas {
+  display: flex;
+  justify-content: center;
+  font-size: 1.8em;
+}
+
+.empresas > button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border: 2px solid #ababab;
+  background-color: #ffffff;
+  border-radius: 15px;
+  height: 200px;
+  width: 220px;
+  text-align: center;
+}
+
+.empresas > button:hover {
+  opacity: 0.5;
+  transition: opacity 0.7s ease-in-out;
+}
+
+.toggle {
+  width: 50px;
+  height: 45px;
+}
+
+.main-personalizada {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.top {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  border: 1px solid #ababab;
+  height: 45px;
+  background-color: #696969;
+  border-radius: 10px;
+}
+.button {
+  width: 50px;
+  height: 45px;
+  margin-bottom: 40px;
+}
+.button > button {
+  width: 50px;
+  height: 45px;
+}
+.buttons {
+  display: flex;
+  margin-right: -20px;
+  margin-bottom: 35px;
+}
+.form-check {
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+.options {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.checkbox {
+  padding-top: 15px;
+  margin-left: 20px;
+  width: 100%;
+}
+#bred > button,
+#bblue > button {
+  width: 100px;
+}
+
+#bred > button {
+  background-color: #ffffff;
+}
+
+#bblue > button {
+  background-color: #ffffff;
+  margin-right: 5px;
+}

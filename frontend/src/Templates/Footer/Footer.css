@@ -1,0 +1,22 @@
+.rodape {
+  text-align: center;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.fa-github,
+.fa-linkedin-square {
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+#dev {
+  margin-top: 20px;
+}
+
+a,
+a:hover,
+a:active {
+  color: black;
+}
