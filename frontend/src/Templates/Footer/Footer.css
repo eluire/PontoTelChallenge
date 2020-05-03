@@ -15,8 +15,12 @@
   margin-top: 20px;
 }
 
-a,
-a:hover,
-a:active {
+a:hover {
+  color: #333;
+}
+
+a {
+  text-decoration: none;
   color: black;
+  transition: color 0.3s ease-in-out;
 }
