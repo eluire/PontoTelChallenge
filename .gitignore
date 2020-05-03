@@ -1,0 +1,7 @@
+# files to deploy
+requirements.txt
+Procfile
+
+#templates flask
+
+/templates/
